@@ -31,7 +31,7 @@ skipKeywords:
   - WIP
   - draft
 
-# Set to true to add reviewers from different organizations
+# Set to true to use review groups for team-based assignments
 useReviewGroups: false
 
 # A list of review groups with reviewers
