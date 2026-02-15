@@ -97,7 +97,7 @@ Some workflows require additional configuration files in the `.github/` director
 - **labeler.yml** - Rules for the Pull Request Labeler
 - **auto-assign.yml** - Configuration for Auto Assign Reviewers
 
-Example configuration files are provided in the `.github/` directory of this repository.
+Example configuration files are provided in the `.github/` directory of the organization's `.github` repository (MW-GC/.github) and should be copied to your repository when using these workflows.
 
 ## Customization Tips
 
