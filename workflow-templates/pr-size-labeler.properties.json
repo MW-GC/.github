@@ -1,0 +1,7 @@
+{
+  "name": "PR Size Labeler",
+  "description": "Automatically labels pull requests based on their size (XS, S, M, L, XL). Helps reviewers understand the scope of changes at a glance.",
+  "iconName": "diff",
+  "categories": ["Automation", "Utilities"],
+  "filePatterns": []
+}

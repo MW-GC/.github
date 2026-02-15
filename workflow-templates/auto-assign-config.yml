@@ -1,0 +1,48 @@
+# Auto-assign configuration template
+# Copy this file to .github/auto-assign.yml in your repository when using the auto-assign workflow
+
+# Set to true to add reviewers to pull requests
+addReviewers: true
+
+# Set to true to add assignees to pull requests
+addAssignees: false
+
+# A list of reviewers to be added to pull requests (GitHub user name)
+reviewers:
+  # Add your team members here
+  # - username1
+  # - username2
+
+# A number of reviewers added to the pull request
+# Set to 0 to add all reviewers (default: 0)
+numberOfReviewers: 0
+
+# A list of assignees, overrides reviewers if set
+assignees:
+  # - username1
+
+# A number of assignees to add to the pull request
+# Set to 0 to add all assignees (default: 0)
+numberOfAssignees: 0
+
+# A list of keywords to be skipped for reviewers
+skipKeywords:
+  - wip
+  - WIP
+  - draft
+
+# Set to true to use review groups for team-based assignments
+useReviewGroups: false
+
+# A list of review groups with reviewers
+reviewGroups:
+  # Example configuration
+  # backend:
+  #   - backend-dev-1
+  #   - backend-dev-2
+  # frontend:
+  #   - frontend-dev-1
+  #   - frontend-dev-2
+
+# Set to true to filter authors from reviewers
+filterAuthorFromReviewers: true

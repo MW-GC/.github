@@ -1,0 +1,7 @@
+{
+  "name": "Dependency Review",
+  "description": "Reviews dependencies in pull requests for security vulnerabilities and license compliance. Helps prevent introducing vulnerable or incompatible dependencies.",
+  "iconName": "shield-check",
+  "categories": ["Security", "Code Scanning"],
+  "filePatterns": ["package.json", "*.csproj", "packages.config"]
+}

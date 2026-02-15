@@ -1,0 +1,7 @@
+{
+  "name": "Pull Request Labeler",
+  "description": "Automatically labels pull requests based on file paths and patterns. Helps categorize PRs by type (docs, dependencies, frontend, backend, etc.)",
+  "iconName": "tag",
+  "categories": ["Automation", "Utilities"],
+  "filePatterns": []
+}

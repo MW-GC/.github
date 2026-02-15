@@ -13,6 +13,8 @@ Use this repo to manage:
 - **Security** policy and vulnerability reporting guidance
 - **Support** and contact/help directions
 - Issue / PR templates and organization-wide GitHub configuration
+- **Workflow templates** — reusable GitHub Actions workflows for all repositories
+- **Active workflows** — organization-wide workflows that run automatically
 
 ## Community health files
 
@@ -28,6 +30,42 @@ Depending on how you structure things, you may also include:
 - `.github/ISSUE_TEMPLATE/*` — issue templates
 - `.github/pull_request_template.md` — PR template
 - `.github/FUNDING.yml` — funding links (optional)
+
+## Active workflows
+
+The `.github/workflows/` directory contains workflows that run automatically for this organization:
+
+- **Pull Request Labeler** — Automatically labels PRs in this repo based on file paths
+- **PR Size Labeler** — Labels PRs in this repo by size (XS, S, M, L, XL)
+- **First Time Contributor Greeting** — Welcomes new contributors to this repo
+
+Configuration: Labeler uses `.github/labeler-config.yml` for label rules.
+
+## Workflow templates
+
+The `workflow-templates/` directory contains reusable GitHub Actions workflow templates that can be used across all repositories in the organization. These templates provide standardized automation for common tasks:
+
+### Available Templates
+
+1. **Pull Request Labeler** — Automatically labels PRs based on file paths (docs, dependencies, JS/TS, .NET, etc.)
+2. **PR Size Labeler** — Labels PRs by size (XS, S, M, L, XL) to help reviewers
+3. **Stale Issue/PR Management** — Automatically manages and closes stale issues and PRs
+4. **Dependency Review** — Scans PR dependencies for security vulnerabilities and license compliance
+5. **CodeQL Security Scanning** — Performs automated security analysis (supports JS/TS and .NET)
+6. **Auto Assign Reviewers** — Automatically assigns reviewers to PRs based on configuration
+7. **First Time Contributor Greeting** — Welcomes new contributors with friendly messages
+
+### Using Workflow Templates
+
+To use these templates in your repository:
+
+1. Go to your repository's **Actions** tab
+2. Click **New workflow**
+3. Scroll to **Workflows created by Morningwood Gaming**
+4. Choose a template and click **Configure**
+5. Customize as needed and commit
+
+For detailed documentation, see [workflow-templates/README.md](workflow-templates/README.md).
 
 ## How to contribute to this repo
 

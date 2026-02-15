@@ -1,0 +1,7 @@
+{
+  "name": "CodeQL Security Scanning",
+  "description": "Performs security analysis on your code using GitHub's CodeQL engine. Supports JavaScript/TypeScript and C#/.NET, with automated vulnerability detection.",
+  "iconName": "shield-lock",
+  "categories": ["Security", "Code Scanning"],
+  "filePatterns": ["**/*.js", "**/*.ts", "**/*.cs", "**/*.csproj"]
+}

@@ -1,0 +1,118 @@
+# Labeler configuration for automatically labeling pull requests based on file paths
+# Used by the Pull Request Labeler workflow in .github/workflows/labeler.yml
+# When copying this to other repositories, save as .github/labeler.yml
+
+# Documentation changes
+documentation:
+  - changed-files:
+    - any-glob-to-any-file: ['**/*.md', 'docs/**/*', '*.md']
+
+# Dependencies
+dependencies:
+  - changed-files:
+    - any-glob-to-any-file:
+      - 'package.json'
+      - 'package-lock.json'
+      - 'yarn.lock'
+      - 'pnpm-lock.yaml'
+      - '**/package.json'
+      - '**/package-lock.json'
+      - '*.csproj'
+      - '**/*.csproj'
+      - 'packages.config'
+      - '**/packages.config'
+      - 'paket.dependencies'
+      - 'paket.lock'
+
+# JavaScript/TypeScript
+javascript:
+  - changed-files:
+    - any-glob-to-any-file:
+      - '**/*.js'
+      - '**/*.jsx'
+
+typescript:
+  - changed-files:
+    - any-glob-to-any-file:
+      - '**/*.ts'
+      - '**/*.tsx'
+
+# .NET
+dotnet:
+  - changed-files:
+    - any-glob-to-any-file:
+      - '**/*.cs'
+      - '**/*.csproj'
+      - '**/*.sln'
+      - '**/*.fs'
+      - '**/*.fsproj'
+      - '**/*.vb'
+      - '**/*.vbproj'
+
+# Configuration files
+configuration:
+  - changed-files:
+    - any-glob-to-any-file:
+      - '**/*.config'
+      - '**/*.json'
+      - '**/*.yml'
+      - '**/*.yaml'
+      - '**/*.toml'
+      - '**/*.ini'
+      - '.env*'
+
+# CI/CD
+ci-cd:
+  - changed-files:
+    - any-glob-to-any-file:
+      - '.github/workflows/**/*'
+      - '.github/actions/**/*'
+      - 'Dockerfile*'
+      - 'docker-compose*.yml'
+      - '.dockerignore'
+
+# Testing
+testing:
+  - changed-files:
+    - any-glob-to-any-file:
+      - '**/*.test.js'
+      - '**/*.test.ts'
+      - '**/*.spec.js'
+      - '**/*.spec.ts'
+      - '**/*Tests.cs'
+      - '**/*Test.cs'
+      - '**/tests/**/*'
+      - '**/test/**/*'
+
+# Frontend
+frontend:
+  - changed-files:
+    - any-glob-to-any-file:
+      - '**/*.html'
+      - '**/*.css'
+      - '**/*.scss'
+      - '**/*.sass'
+      - '**/*.less'
+      - '**/*.vue'
+      - 'src/components/**/*'
+      - 'src/views/**/*'
+      - 'public/**/*'
+
+# Backend
+backend:
+  - changed-files:
+    - any-glob-to-any-file:
+      - 'src/api/**/*'
+      - 'src/server/**/*'
+      - 'src/services/**/*'
+      - '**/Controllers/**/*'
+      - '**/Services/**/*'
+      - '**/Repositories/**/*'
+
+# Database
+database:
+  - changed-files:
+    - any-glob-to-any-file:
+      - '**/*.sql'
+      - '**/migrations/**/*'
+      - '**/seeds/**/*'
