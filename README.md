@@ -1,50 +1,48 @@
-# Morningwood Gaming
+# Morningwood Gaming (.github)
 
-Welcome to **Morningwood Gaming (MWG)** — a community-first gaming group focused on good games, good people, and good times.
+This repository (**MW-GC/.github**) contains GitHub-wide defaults for the Morningwood Gaming organization, including community health files (Code of Conduct, contributing guidelines, security policy, etc.) that apply across repositories in this org.
 
-- Website: https://mw-gc.com
+## What this repository is for
 
-## About us
+GitHub supports “community health” files stored in an organization’s `.github` repository. When placed here, these files can automatically provide default guidance across repos (unless a repo overrides them with its own versions).
 
-Morningwood Gaming is a gaming community built around playing together, improving together, and keeping things welcoming and fun. Whether you’re here for organized events, casual sessions, or community projects, you’re welcome here.
+Use this repo to manage:
 
-## Our projects
+- **Code of Conduct** and expected behavior standards
+- **Contributing** instructions and PR expectations
+- **Security** policy and vulnerability reporting guidance
+- **Support** and contact/help directions
+- Issue / PR templates and organization-wide GitHub configuration
 
-This GitHub organization hosts MWG’s technical projects and community tooling, which may include:
+## Community health files
 
-- Website and web services
-- Bots and integrations (e.g., Discord automation)
-- Game server configuration and infrastructure
-- Internal utilities, documentation, and templates
+These documents are intended to be maintained **in this repo** and used as org-wide defaults:
 
-Each repository should document its purpose, how to run it (if applicable), and how to contribute.
+- `CODE_OF_CONDUCT.md` — community rules and expectations
+- `CONTRIBUTING.md` — how to contribute, branch/PR conventions, etc.
+- `SECURITY.md` — how to report vulnerabilities responsibly
+- `SUPPORT.md` — how to get help / where to ask questions
 
-## Contributing
+Depending on how you structure things, you may also include:
 
-We welcome contributions from community members.
+- `.github/ISSUE_TEMPLATE/*` — issue templates
+- `.github/pull_request_template.md` — PR template
+- `.github/FUNDING.yml` — funding links (optional)
 
-- Check a repo’s **Issues** for planned work and open tasks
-- Look for labels like **good first issue** / **help wanted**
-- Open an issue if you want to propose a change before submitting a PR
+## How to contribute to this repo
 
-Organization-wide contribution expectations (and any repo-specific additions) are documented in this org’s shared community files (see below).
+If you’re proposing changes to MWG’s org-wide policies or templates:
 
-## Community guidelines, security, and support
-
-MWG maintains organization-wide community health documentation in the **MW-GC/.github** repository. These files provide default guidance across repositories in this organization (unless a repo overrides them).
-
-Please review:
-
-- **Code of Conduct** (`CODE_OF_CONDUCT.md`) — expectations for behavior in MWG spaces
-- **Contributing Guide** (`CONTRIBUTING.md`) — how we prefer issues, branches, commits, and PRs
-- **Security Policy** (`SECURITY.md`) — how to report vulnerabilities responsibly
-- **Support** (`SUPPORT.md`) — where to ask questions / get help
+1. Open an issue describing what you want to change and why
+2. Submit a PR with the proposed edits
+3. Keep changes clear, minimal, and easy to review
+4. If the change affects contributor expectations, call it out explicitly in the PR description
 
 ## Links
 
 - Website: https://mw-gc.com
-- GitHub Org: https://github.com/MW-GC
+- Organization: https://github.com/MW-GC
 
 ---
 
-Here to build, help, or hang out—welcome to MWG.
+If you’re helping improve MWG’s documentation, templates, or policies: thank you.
