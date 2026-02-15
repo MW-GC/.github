@@ -1,0 +1,27 @@
+name: "PR Size Labeler"
+
+on:
+  pull_request:
+    types: [opened, reopened, synchronize]
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  label-pr-size:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Label PR based on size
+        uses: cbrgm/pr-size-labeler-action@v1
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          xs_label: 'size/XS'
+          xs_max_changes: 10
+          s_label: 'size/S'
+          s_max_changes: 50
+          m_label: 'size/M'
+          m_max_changes: 200
+          l_label: 'size/L'
+          l_max_changes: 500
+          xl_label: 'size/XL'

@@ -1,5 +1,6 @@
 # Labeler configuration for automatically labeling pull requests based on file paths
-# This file should be copied to each repository as .github/labeler.yml
+# Used by the Pull Request Labeler workflow in .github/workflows/labeler.yml
+# When copying this to other repositories, save as .github/labeler.yml
 
 # Documentation changes
 documentation:

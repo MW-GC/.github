@@ -1,5 +1,5 @@
-# Auto-assign configuration
-# Copy this file to .github/auto-assign.yml in your repository
+# Auto-assign configuration template
+# Copy this file to .github/auto-assign.yml in your repository when using the auto-assign workflow
 
 # Set to true to add reviewers to pull requests
 addReviewers: true

@@ -2,13 +2,16 @@
 
 This directory contains reusable GitHub Actions workflow templates for the Morningwood Gaming organization. These templates can be used as starting points when setting up Actions in any repository within the organization.
 
+**Note:** Some workflows are already active in the organization's `.github` repository (see `.github/workflows/`). These templates are available for use in other repositories.
+
 ## Available Templates
 
 ### 1. Pull Request Labeler (`labeler.yml`)
 Automatically labels pull requests based on file paths and patterns. Helps categorize PRs by type (docs, dependencies, frontend, backend, etc.).
 
 **Setup:**
-- Copy `.github/labeler.yml` configuration file to your repository
+- Copy the workflow template from `workflow-templates/` to your repository's `.github/workflows/`
+- Copy the labeler configuration from this repo's `.github/labeler-config.yml` to your repository as `.github/labeler.yml`
 - Customize the labeling rules for your project's structure
 - The workflow will run on every PR
 
@@ -86,7 +89,7 @@ Welcomes first-time contributors with a friendly message on their first issue or
 
 ### Manual Setup:
 1. Copy the workflow file to `.github/workflows/` in your repository
-2. Copy any associated configuration files (like `labeler.yml` or `auto-assign.yml`)
+2. Copy any associated configuration files (see Configuration Files section below)
 3. Customize the configuration to match your project's needs
 4. Commit and push
 
@@ -94,10 +97,10 @@ Welcomes first-time contributors with a friendly message on their first issue or
 
 Some workflows require additional configuration files in the `.github/` directory:
 
-- **labeler.yml** - Rules for the Pull Request Labeler
-- **auto-assign.yml** - Configuration for Auto Assign Reviewers
+- **labeler-config.yml** - Rules for the Pull Request Labeler (source: `.github/labeler-config.yml` in MW-GC/.github repo)
+- **auto-assign.yml** - Configuration for Auto Assign Reviewers (source: `workflow-templates/` directory, needs to be created as `.github/auto-assign.yml`)
 
-Example configuration files are provided in the `.github/` directory of the organization's `.github` repository (MW-GC/.github) and should be copied to your repository when using these workflows.
+When copying workflows that need configuration files, also copy the corresponding configuration file to your repository's `.github/` directory and customize as needed.
 
 ## Customization Tips
 

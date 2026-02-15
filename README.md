@@ -14,6 +14,7 @@ Use this repo to manage:
 - **Support** and contact/help directions
 - Issue / PR templates and organization-wide GitHub configuration
 - **Workflow templates** — reusable GitHub Actions workflows for all repositories
+- **Active workflows** — organization-wide workflows that run automatically
 
 ## Community health files
 
@@ -29,6 +30,16 @@ Depending on how you structure things, you may also include:
 - `.github/ISSUE_TEMPLATE/*` — issue templates
 - `.github/pull_request_template.md` — PR template
 - `.github/FUNDING.yml` — funding links (optional)
+
+## Active workflows
+
+The `.github/workflows/` directory contains workflows that run automatically for this organization:
+
+- **Pull Request Labeler** — Automatically labels PRs in this repo based on file paths
+- **PR Size Labeler** — Labels PRs in this repo by size (XS, S, M, L, XL)
+- **First Time Contributor Greeting** — Welcomes new contributors to this repo
+
+Configuration: Labeler uses `.github/labeler-config.yml` for label rules.
 
 ## Workflow templates
 
