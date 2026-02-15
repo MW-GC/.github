@@ -1,0 +1,7 @@
+{
+  "name": "First Time Contributor Greeting",
+  "description": "Welcomes first-time contributors with a friendly message on their first issue or pull request. Helps build a welcoming community atmosphere.",
+  "iconName": "heart",
+  "categories": ["Automation", "Utilities"],
+  "filePatterns": []
+}

@@ -1,0 +1,7 @@
+{
+  "name": "Auto Assign Reviewers",
+  "description": "Automatically assigns reviewers to pull requests based on configuration. Helps ensure PRs get reviewed promptly by the right team members.",
+  "iconName": "people",
+  "categories": ["Automation", "Utilities"],
+  "filePatterns": []
+}
